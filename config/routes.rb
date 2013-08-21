@@ -1,4 +1,6 @@
 Omr::Application.routes.draw do
+  resources :pins
+
   devise_for :users
   get "page/home"
   root :to => 'page#home'
