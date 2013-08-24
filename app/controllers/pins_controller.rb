@@ -28,7 +28,7 @@ class PinsController < ApplicationController
   # POST /pins
   # POST /pins.json
   def create
-    @pin = current_user.pins.new(params[:id])
+    @pin = current_user.pins.new(pin_params)
 
     respond_to do |format|
       if @pin.save
@@ -75,6 +75,6 @@ class PinsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pin_params
-      params.require(:pin).permit(:description)
+      pin_params= params.require(:pin).permit(:pin, :description)
     end
 end
