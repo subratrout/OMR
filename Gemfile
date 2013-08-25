@@ -36,7 +36,7 @@ end
 
 gem 'devise'
 gem 'simple_form'
-gem 'better_errors'
+gem 'paperclip', github: 'thoughtbot/paperclip', branch: 'rails-4'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
