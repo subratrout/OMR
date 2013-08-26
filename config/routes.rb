@@ -3,7 +3,7 @@ Omr::Application.routes.draw do
 
   devise_for :users
   get "page/home"
-  root :to => 'page#home'
+  root :to => 'pins#index'
   get 'about' => 'page#about'
 
   # The priority is based upon order of creation: first created -> highest priority.
